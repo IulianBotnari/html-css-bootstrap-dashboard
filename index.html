@@ -20,6 +20,24 @@
 
     <body>
         <header>
+            <nav class="navbar bg-dark border-bottom border-body d-none d-lg-flex justify-content-between" data-bs-theme="dark">
+                <div class="ms-4">
+                    <a href=""><img style="height: 40px;" src="./img/duck.png" alt="logo"></a>
+                    <a class="text-body-emphasis h5 text-decoration-none mx-2">Catalogo Libri</a>
+                    <a class="text-body-secondary text-decoration-none mx-2">Anagrafica Utenti</a>
+                    <a class="text-body-secondary text-decoration-none mx-2">Storico Prestiti</a>
+                    <a class="text-body-secondary text-decoration-none mx-2">Help</a>   
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <input class="form-control me-2 w-50 bg-light" type="search" placeholder="Cerca" aria-label="Search">
+                    <button type="button" class="btn btn-outline-light me-3">Cerca</button>
+                </div>
+            </nav>
+
+
+
+
             <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
                 <div class="bg-dark p-4 d-flex justify-content-between">
                         <a class="text-body-emphasis h5 text-decoration-none mx-2">Catalogo Libri</a>
@@ -33,185 +51,260 @@
                     <button type="button" class="btn btn-outline-light">Cerca</button>
                 </div>
             </div>
-              <nav class="navbar navbar-dark bg-dark">
+
+            
+            <nav class="navbar navbar-dark bg-dark d-lg-none">
                 <div class="container-fluid justify-content-between">
                     <a href=""><img style="height: 40px;" src="./img/duck.png" alt="logo"></a>
-                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                    <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"                       aria-controls="navbarToggleExternalContent"aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-              </nav>
+            </nav>
+
+
         </header>
 
 
-        <main>
-
-            <div class="container">
-
-                <div class="d-flex justify-content-between allign-items-center my-4">
-
-                    <div class="text-dark fs-4">
-                        Catalogo Libri
+        <main class="container-lg m-auto mt-5">
+            <div class="row-lg d-lg-flex">
+                <div class="container col-lg-8">
+    
+                    <div class="d-flex justify-content-between allign-items-center my-4">
+    
+                        <div class="text-dark fs-4">
+                            Catalogo Libri
+                        </div>
+    
+                        <button type="button" class="btn btn-primary">Aggiungi libro</button>
+    
+                        
                     </div>
-
-                    <button type="button" class="btn btn-primary">Aggiungi libro</button>
-
                     
+                    <table class="table">
+    
+                        
+                        <thead>
+                            <tr>
+                                <th scope="col">Titolo</th>
+                                <th class="d-none d-sm-flex" scope="col">Data prestito</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+    
+    
+    
+                        <tbody>
+                            <tr class="table-light">
+                                <td>I pilastri della terra</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="">
+                                <td>I promessi sposi</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="table-light">
+                                <td>Il signore degli anelli</td>
+                                <td class="d-none d-sm-table-cell">18/10/2023</td>
+                                <td><button type="button" class="btn btn-warning text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="">
+                                <td>Harry Potter e la pietra filosofale</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="table-light">
+                                <td>Il codice Da Vinci</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-danger text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="">
+                                <td>Shining</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="table-light">
+                                <td>La divina commedia</td>
+                                <td class="d-none d-sm-table-cell">21/09/2023</td>
+                                <td><button type="button" class="btn btn-warning text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="">
+                                <td>Il trono di spade</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="table-light">
+                                <td>Il mondo di Sofia</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-danger text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="">
+                                <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                <td class="d-none d-sm-table-cell">25/07/2023</td>
+                                <td><button type="button" class="btn btn-warning text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="table-light">
+                                <td>Il piccolo principe</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+    
+                            <tr class="">
+                                <td>La storia infinita</td>
+                                <td class="d-none d-sm-table-cell">-</td>
+                                <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
+                                <td class="d-flex">
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                    <button type="button" class="btn btn-outline-dark">ciao</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                </div>
+    
+                <div class="container col-lg">
+                    <div class="d-flex flex-column">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header">
+                              Todo
+                            </div>
+                            <ul class="list-group list-group-flush m-4 border border-secondary-subtle rounded-2">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Chiamare segreteria
+                                        </label>
+                                    </div>
+                                </li>
+    
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Mandare avvisi prestiti scaduti
+                                        </label>
+                                    </div>
+    
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Ordinare nuovi libri
+                                        </label>
+                                    </div>
+    
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="card" style="width: 100%;">
+                            <div class="card-header">
+                              FAQ
+                            </div>
+                            <div class="accordion m-4" id="faq">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Come aggiungere un nuovo libro ?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                                    <div class="accordion-body">
+                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Come posso accedere all'anagrafica utenti ?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faq">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Posso usare queta dashboard da mobile ?
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
                 
-                <table class="table">
-
-                    
-                    <thead>
-                        <tr>
-                            <th scope="col">Titolo</th>
-                            <th class="d-none d-sm-flex" scope="col">Data prestito</th>
-                            <th scope="col">Stato</th>
-                            <th scope="col">Azioni</th>
-                        </tr>
-                    </thead>
-
-
-
-                    <tbody>
-                        <tr class="table-light">
-                            <td>I pilastri della terra</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="">
-                            <td>I promessi sposi</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="table-light">
-                            <td>Il signore degli anelli</td>
-                            <td class="d-none d-sm-table-cell">18/10/2023</td>
-                            <td><button type="button" class="btn btn-warning text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="">
-                            <td>Harry Potter e la pietra filosofale</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="table-light">
-                            <td>Il codice Da Vinci</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-danger text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="">
-                            <td>Shining</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="table-light">
-                            <td>La divina commedia</td>
-                            <td class="d-none d-sm-table-cell">21/09/2023</td>
-                            <td><button type="button" class="btn btn-warning text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="">
-                            <td>Il trono di spade</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="table-light">
-                            <td>Il mondo di Sofia</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-danger text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="">
-                            <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                            <td class="d-none d-sm-table-cell">25/07/2023</td>
-                            <td><button type="button" class="btn btn-warning text-white fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="table-light">
-                            <td>Il piccolo principe</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-
-                        <tr class="">
-                            <td>La storia infinita</td>
-                            <td class="d-none d-sm-table-cell">-</td>
-                            <td><button type="button" class="btn btn-success fw-bold" style="--bs-btn-padding-y: .1rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Disponibile</button></td>
-                            <td class="d-flex">
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                                <button type="button" class="btn btn-outline-dark">ciao</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div class="container">
-                <div class="d-flex flex-column">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header">
-                          Featured
-                        </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">An item</li>
-                          <li class="list-group-item">A second item</li>
-                          <li class="list-group-item">A third item</li>
-                        </ul>
-                      </div>
-                    <div class=""></div>
-                </div>
             </div>
         </main>
      
